@@ -26,3 +26,37 @@ Display meaningful error messages only if the user misuses a command. You do not
 The B simulation is a local, single-threaded CLI. There is no need for cryptography! Account information is not permanently stored, as the `start-node` command will start a new blockchain.
 
 As long as the four commands work as expected, there is no single “right” way of doing this simulation project 🙂
+
+## TODO
+
+### V1
+
+Assertions: this won't handle multiple nodes (no synchronization), and won't use cryptography.
+
+- Blockchain
+
+  - Setup transactions
+  - Setup blocks
+  - Setup blockchain
+
+- Node
+
+  - Transactions pool
+  - Blocks mining
+
+- Network
+
+  - Setup P2P network
+  - Setup topic for account creation
+  - Setup topic for transfer
+  - Setup topic for balance
+
+- Cli
+  - Handle `start-node` command
+  - Handle `create-account` command
+  - Handle `transfer` command
+  - Handle `balance` command
+
+### V2
+
+Maybe add some synchronization between nodes, and use cryptography ?
