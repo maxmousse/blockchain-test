@@ -61,3 +61,22 @@ Assertions: this won't handle multiple nodes (no synchronization), and won't use
 ### V2
 
 Maybe add some synchronization between nodes, and use cryptography ?
+
+## Project structure
+
+The project is composed of the following crates:
+
+- blockchain: contains the blockchain logic, and centralizes all the logic to read/write data from/to the blockchain.
+- network: contains all the p2p network logic
+- node: contains the logic allowing to run a blockchain node on the network (handling transactions, and scheduling blocks mining)
+- cli: contains the logic to interact with the blockchain through the command line
+
+The dependencies between the crates are the following:
+
+```mermaid
+graph TD
+    node --> blockchain
+    node --> network
+    cli --> node
+    cli --> network
+```
