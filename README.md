@@ -35,14 +35,15 @@ Assertions: this won't handle multiple nodes (no synchronization), and won't use
 
 - Blockchain
 
-  - Setup transactions
-  - Setup blocks
-  - Setup blockchain
+  - [x] Setup transactions
+  - [x] Setup blocks
+  - [x] Setup blockchain
 
 - Node
 
-  - Transactions pool
-  - Blocks mining
+  - [x] Transactions pool
+  - [x] Blocks mining
+  - add scheduler for blocks mining
 
 - Network
 

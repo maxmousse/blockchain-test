@@ -1,6 +1,6 @@
 [workspace]
-
-members = ["blockchain"]
+resolver = "2"
+members = ["blockchain", "node"]
 
 [workspace.dependencies]
 serde = { version = "1.0.198", features = ["derive"]}
