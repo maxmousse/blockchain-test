@@ -47,7 +47,7 @@ Assertions: this won't handle multiple nodes (no synchronization), and won't use
 
 - Network
 
-  - Setup P2P network
+  - [x] Setup P2P network
   - Setup topic for account creation
   - Setup topic for transfer
   - Setup topic for balance
