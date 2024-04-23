@@ -107,8 +107,6 @@ mod test {
         let genesis = Block::new_genesis();
         let block = Block::new(&genesis, vec![]);
 
-        println!("{:?}", block);
-
         assert_eq!(block.id, 1);
         assert_eq!(block.transactions.len(), 0);
         assert_eq!(block.previous_hash, genesis.hash);
